@@ -22,9 +22,6 @@ const sendButton = document.querySelector(".genera");
 
 let kmViaggio;
 
-// calcolo costo biglietto senza sconti
-// let costoBigliettoIniziale = kmViaggio * 0.21;
-// console.log("costo del biglietto senza sconti:", costoBigliettoIniziale,"€");
 
 // evento al click
 sendButton.addEventListener("click", function()  {
@@ -38,6 +35,11 @@ sendButton.addEventListener("click", function()  {
     kmViaggio = parseInt(inputKm.value);
     console.log(kmViaggio);
 });
+
+// calcolo costo biglietto senza sconti
+let costoBigliettoIniziale = kmViaggio * 0.21;
+console.log("costo del biglietto senza sconti:", costoBigliettoIniziale,"€");
+
 
 // if (isNaN(kmViaggio)) {
 //     console.error("L'input non è un numero valido");
